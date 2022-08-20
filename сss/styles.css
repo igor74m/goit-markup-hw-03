@@ -42,9 +42,8 @@ text-decoration: none;
   .container {
     margin-left: auto;
     margin-right: auto;
-  height: 100px;
   width: 1200px;
-  background-color: orange;
+  background-color: red;
   }
   
   .page-logo {
