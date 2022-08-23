@@ -12,48 +12,56 @@
 </head>
 <body>
     <!--капелюх сайту -->
-    <header>
-         <nav class="page-nav">
+    <header class="page-header">
+        <div class="container">
+         <nav class="menu-nav">
             <a class="page-logo link" href="./index.html">Web<span class="studio-heder">Studio</span></a>
             <ul class="menu-list link list">
-                <li><a  href="./index.html" class="link current">Студія</a></li>
-                <li><a  href="./portfolio.html" class="link">Портфоліо</a></li>
-                <li><a  href="#" class="link">Контакти</a></li>
+                <li class="item"><a  href="./index.html" class="link current">Студія</a></li>
+                <li class="item"><a  href="./portfolio.html" class="link">Портфоліо</a></li>
+                <li class="item"><a  href="#" class="link">Контакти</a></li>
+            </ul> 
+        <ul class="contact list">
+            <li class="contact-item"><a class="contact-list link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="contact-item"><a class="contact-list link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul class="list">
-            <li><a class="contact-list link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="contact-list link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
+            </nav>
+        </div>
     </header>
     <!-- основна частина сайту -->
     <main>
-        <section class="hero">
+        <!-- хіро-секція -->
+        <section class="hero"> 
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
             <button class="modal-open-btn" type="button">Замовити послугу</button>
         </section>
+        <!-- наші переваги -->
         <section class="section">
+            <div class="container">
             <h2 class="visually-hidden ">Наші переваги</h2>
-            <ul class="list">
-                <li>
+            <ul class="section-list list">
+                <li class="item">
                     <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
                     <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                 </li>
-                <li>
+                <li class="item">
                     <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
                     <p class="section-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                 </li>
-                <li>
+                <li class="item">
                     <h3 class="title">ПЛАНУВАННЯ</h3>
                     <p>Так само консультація з широким активом значною мірою зумовлює.</p>
                 </li>
-                <li>
+                <li class="item">
                     <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                     <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                 </li>
             </ul>
+            </div>
         </section>
-        <section class="section">
+        <!-- чим займаємось -->       
+        <section class="section section-work">
+            <div class="container">
             <h2 class="section-title">Чим ми займаємося</h2>
             <ul class="list">
                 <li>
@@ -64,8 +72,11 @@
                 <li><img src="./imajes/box 3.jpg" alt="рука-з-планшетом" width="370"/>
                 </li>
             </ul>
+            </div>
         </section>
+        <!-- наша команда -->
 <section class="section-team">
+    <div class="container">
     <h2 class="section-title">Наша команда</h2>
     <ul class="team-list list">
         <li>
@@ -89,9 +100,11 @@
             <p class="text">UI Designer</p>
     </li>
     </ul> 
+    </div>
 </section>
    </main>
    <footer class="page-footer">
+    <div class="container">
     <a class="page-logo link" href="./index.html">Web<span class="studio-footer">Studio</span></a>
     <address>
         <ul class="list-item list">
@@ -103,5 +116,6 @@
         </ul>
     </address>
    </footer>
+</div>
 </body>
 </html>
