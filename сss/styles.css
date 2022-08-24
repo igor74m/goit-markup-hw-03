@@ -56,11 +56,15 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  border: solid 1px red;
+  /* border: solid 1px red; */
 }
 /* капелюх сайту */
 .page-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   background-color: var(--background-color);
+  border: 1px solid #ececec;
 }
 .menu-nav {
   display: flex;
@@ -130,7 +134,7 @@ body {
 .contact .contact-item:not(:last-child) {
   margin-right: 50px;
 }
-.contact-item {
+.contact-list {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -140,13 +144,13 @@ body {
 }
 /* основна частина сайту */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   color: var(--background-color);
   background-color: #2f303a;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
-
 .hero-title {
   width: 696px;
   margin-bottom: 30px;
@@ -160,7 +164,10 @@ body {
   text-transform: uppercase;
 }
 .modal-open-btn {
-  padding: 10px 32px;
+  min-width: 216px;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   color: var(--background-color);
   background-color: var(--accent-color);
@@ -176,6 +183,10 @@ body {
   border-radius: 4px;
 }
 /* наші переваги */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -189,8 +200,6 @@ body {
   margin: -1px;
 }
 .section-list {
-  margin-top: 94px;
-  margin-bottom: 94px;
   display: flex;
 }
 .section-list .item {
@@ -215,14 +224,22 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.section-work {
-  margin-bottom: 94px;
+.work {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+.work-list {
+  display: flex;
+  width: 270px;
+}
+.work-list .item:not(:last-child) {
+  margin-right: 30px;
 }
 .section-title {
   margin-bottom: 50px;
 }
 
-.section-team {
+.section .team {
   padding-top: 94px;
   padding-bottom: 94px;
 
@@ -230,17 +247,28 @@ body {
 }
 .section .section-title {
   color: var(--title-text-color);
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1, 17;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 .section-title {
   text-align: center;
 }
-.team-list .title {
+.team-list {
+  display: flex;
+}
+.team-item {
+  background-color: var(--background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-item .title {
+  margin-top: 30px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -248,7 +276,10 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team-list .text {
+.team-item .text {
+  margin-top: 10px;
+  margin-bottom: 30px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1, 19;
@@ -258,6 +289,12 @@ body {
 /* підвал сайту */
 .page-footer {
   background-color: var(--footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.page-footer .page-logo {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 .studio-footer {
   color: #ffffff;
@@ -282,8 +319,21 @@ body {
 }
 
 /* стилі портфоліо */
-
+/* кнопки фильтру */
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 98px;
+  margin-bottom: 46px;
+}
+.filter-list .item + .item {
+  margin-left: 8px;
+}
 .filter-btn {
+  padding: 6, 22;
+}
+.filter-list .filter-btn {
+  /* padding: 6, 22; */
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
   font-weight: 500;
@@ -302,25 +352,56 @@ body {
   color: var(--background-color);
   background-color: var(--accent-color);
 }
+/* список карток */
 .card-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 30px;
+  margin-bottom: 94px;
 }
-.card-list:nth-last-child(3n) {
+.card-list .card-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+}
+.card-list .card-item:nth-child(3n) {
   margin-right: 0;
 }
-.card-list:nth-last-child(-n + 3) {
+.card-list .card-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-.card-list .title {
+.card-item {
+  width: 370px;
+  height: 404px;
+}
+.card-icon {
+  width: 370px;
+  height: 294px;
+  margin-bottom: 20px;
+}
+/* .card-container {
+  width: 322px;
+  height: 70;
+  margin: 20 24;
+} */
+.card-item .title {
+  width: 322px;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 4px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.card-list .text {
+.card-item .text {
+  width: 322px;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+
   color: var(--color);
   font-weight: 400;
   font-size: 16px;
