@@ -6,6 +6,7 @@
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --footer-color: #2f303a;
   --secondary-background-color: #f5f4fa;
+  --border-color: #ececec;
 }
 /* колір фону  #FFFFFF  */
 /* колір тексту основний #757575 */
@@ -59,12 +60,13 @@ body {
   /* border: solid 1px red; */
 }
 /* капелюх сайту */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .page-header {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   background-color: var(--background-color);
-  border: 1px solid #ececec;
+  border: 1px solid var(--border-color);
 }
 .menu-nav {
   display: flex;
@@ -83,7 +85,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 .studio-heder {
@@ -92,13 +94,13 @@ body {
 
 .menu-list .link {
   display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .menu-list a:hover,
@@ -109,7 +111,7 @@ body {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -125,6 +127,9 @@ body {
   margin-left: auto;
 }
 .contact-list {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -134,10 +139,6 @@ body {
 .contact .contact-item:not(:last-child) {
   margin-right: 50px;
 }
-.contact-list {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 .contact-list:hover,
 .contact-list:focus {
   color: var(--accent-color);
@@ -146,20 +147,19 @@ body {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-
-  color: var(--background-color);
-  background-color: #2f303a;
+  background-color: var(--footer-color);
   text-align: center;
 }
 .hero-title {
+  color: var(--background-color);
   width: 696px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 
   font-weight: 900;
   font-size: 44px;
-  line-height: 1, 36;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -173,7 +173,7 @@ body {
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
-  line-height: 1, 9;
+  line-height: 1.9;
   align-items: center;
   letter-spacing: 0.06em;
 }
@@ -183,10 +183,6 @@ body {
   border-radius: 4px;
 }
 /* наші переваги */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -209,9 +205,8 @@ body {
   margin-right: 30px;
 }
 .section-text {
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1, 7;
+  line-height: 1.7;
   letter-spacing: 0.03em;
 }
 .section .title {
@@ -220,13 +215,12 @@ body {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .work {
   padding-top: 0;
-  padding-bottom: 94px;
 }
 .work-list {
   display: flex;
@@ -236,20 +230,17 @@ body {
   margin-right: 30px;
 }
 .section-title {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .section .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   background-color: var(--secondary-background-color);
 }
 .section .section-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1, 17;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 }
 .section-title {
@@ -267,22 +258,21 @@ body {
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
-.team-item .title {
-  margin-top: 30px;
+.team-item .team-title {
+  padding-top: 30px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 19;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team-item .text {
-  margin-top: 10px;
-  margin-bottom: 30px;
+.team-item .team-text {
+  padding-top: 10px;
+  padding-bottom: 30px;
 
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1, 19;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -294,28 +284,29 @@ body {
 }
 .page-footer .page-logo {
   display: inline-block;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .studio-footer {
   color: #ffffff;
 }
-.list-item .maps-link {
-  color: #ffffff;
-  font-weight: 400;
+.footer-list .maps-link {
+  color: var(--background-color);
   font-size: 14px;
-  line-height: 1, 7;
+  line-height: 1.7;
   letter-spacing: 0.03em;
 }
-.list-item .menu-link {
+.footer-list .menu-link {
   color: var(--footer-link-color);
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1, 17;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 }
-.list-item .menu-link:hover,
-.list-item .menu-link:focus {
+.footer-list .menu-link:hover,
+.footer-list .menu-link:focus {
   color: var(--accent-color);
+}
+.footer-list .item {
+  padding-bottom: 9px;
 }
 
 /* стилі портфоліо */
@@ -329,16 +320,14 @@ body {
 .filter-list .item + .item {
   margin-left: 8px;
 }
-.filter-btn {
-  padding: 6, 22;
-}
 .filter-list .filter-btn {
-  /* padding: 6, 22; */
+  padding: 6px, 22px;
+  height: 38px;
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 6;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -356,7 +345,6 @@ body {
 .card-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
 }
 .card-list .card-item {
   width: calc((100% - 60px) / 3);
@@ -375,17 +363,11 @@ body {
   width: 370px;
   height: 404px;
 }
-.card-icon {
-  width: 370px;
-  height: 294px;
-  margin-bottom: 20px;
+.container-card {
+  padding: 20px 24px;
 }
 .section .card-title {
-  width: 322px;
-  margin-left: 24px;
-  margin-left: 24px;
-
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 
   color: var(--title-text-color);
   font-weight: 700;
@@ -394,14 +376,8 @@ body {
   letter-spacing: 0.06em;
 }
 .card-item .text {
-  width: 322px;
-  margin-right: 24px;
-  margin-left: 24px;
-  margin-bottom: 20px;
-
   color: var(--color);
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1, 9;
+  line-height: 1.9;
   letter-spacing: 0.03em;
 }
