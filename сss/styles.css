@@ -65,6 +65,7 @@ body {
   padding-bottom: 94px;
 }
 .page-header {
+  width: 1600px;
   background-color: var(--background-color);
   border: 1px solid var(--border-color);
 }
@@ -76,14 +77,6 @@ body {
   display: flex;
   align-items: center;
 }
-.menu-list {
-  display: flex;
-  margin-left: 93px;
-}
-.menu-list .item + .item {
-  margin-left: 50px;
-}
-
 .page-logo {
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
@@ -95,11 +88,18 @@ body {
 .studio-heder {
   color: #000000;
 }
+.menu-list {
+  display: flex;
+  margin-left: 93px;
+}
+.menu-list .item + .item {
+  margin-left: 50px;
+}
 
-.menu-list .item {
+.nav-link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 31px;
+  padding-bottom: 31px;
 
   color: var(--title-text-color);
   font-weight: 500;
@@ -107,18 +107,14 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.menu-list a:hover,
-.menu-list a:focus {
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+.link.current {
   color: var(--accent-color);
 }
 
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--accent-color);
-}
-.menu-list .link.current {
-  color: var(--accent-color);
-}
 .contact {
   display: flex;
   margin-left: auto;
@@ -147,6 +143,7 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--footer-color);
+  background-image: url(./imajes/imj14.jpg);
   text-align: center;
 }
 .hero-title {
@@ -206,7 +203,8 @@ body {
 .section-title {
   margin-bottom: 50px;
 }
-.section-text {
+.about-text {
+  color: var(--color);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -313,8 +311,7 @@ body {
 .filter-list {
   display: flex;
   justify-content: center;
-  margin-top: 98px;
-  margin-bottom: 46px;
+  margin-bottom: 50px;
 }
 .filter-list .item + .item {
   margin-left: 8px;
